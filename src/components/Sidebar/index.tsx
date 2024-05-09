@@ -1,4 +1,4 @@
-import { SvgProps } from "../interfaces";
+import { SvgProps } from "../../interfaces";
 
 export function Sidebar({ color }: SvgProps){
     return (
@@ -10,6 +10,6 @@ export function Sidebar({ color }: SvgProps){
             <g className="sidebar">
                 <path d="M613 0C613 0 361.26 501.011 613 1080H0V0H613Z" fill={color}/>
             </g>
-      </svg>
+        </svg>
     );
 }
