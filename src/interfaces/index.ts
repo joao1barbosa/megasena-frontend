@@ -9,6 +9,7 @@ export interface NumberProps{
 }
 
 export interface ContestInfo{
+    name: string;
     numbers: number[];
     contest: number;
     date: string;

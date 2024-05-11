@@ -14,10 +14,76 @@ export const MainScreen = styled.div`
 
 export const InfoPart = styled.section`
     flex: 4;
-    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #6BEFA3;
+    color: #ffffff;
 
     @media (max-width: 1024px){
         max-height: 30%;
+    }
+`;
+
+export const Select = styled.select`
+    align-self: flex-start;
+    background-color: #ffffff;
+    height: 45px;
+    width: 215px;
+    margin-top: 30px;
+    padding: 10px 10px 10px;
+    margin-left: 10%;
+    font-size: 20px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+
+    justify-content: center;
+    align-items: center;
+
+    @media (max-width: 1024px){
+        align-self: center;
+        margin-left: 0px;
+    }
+
+    option{
+        border: none;
+        outline: none;
+    }
+`;
+
+export const ContestName = styled.div`
+    flex: 1;
+    display: flex;
+    width: 100%;
+    height: 100%;
+
+    justify-content: center;
+    align-items: flex-end;
+    font-size: 40px;
+    font-weight: bold;
+
+    img{
+        margin-right: 25px;
+    }
+`;
+
+export const Infos = styled.div`
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 70px;
+
+    margin-left: -180px;
+
+    h3{
+        font-size: 13px;
+        margin-bottom: 10px;
     }
 `;
 
@@ -29,7 +95,6 @@ export const NumberPart = styled.section`
 
     justify-content: center;
     align-items: center;
-    /* background-color: yellow; */
 
     ol{
         display: flex;
