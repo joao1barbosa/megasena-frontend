@@ -12,6 +12,6 @@ export const Bubble = styled.li`
     border-radius: 999px;
 
     font-size: 30px;
-    font-weight: 700px;
+    font-weight: 900px;
 
 `;

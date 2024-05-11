@@ -7,3 +7,9 @@ export interface SvgProps{
 export interface NumberProps{
     children: ReactNode
 }
+
+export interface ContestInfo{
+    numbers: number[];
+    contest: number;
+    date: string;
+}

@@ -17,7 +17,7 @@ export const InfoPart = styled.section`
     background-color: black;
 
     @media (max-width: 1024px){
-        max-height: 45%;
+        max-height: 30%;
     }
 `;
 
@@ -46,5 +46,9 @@ export const NumberPart = styled.section`
         font-weight: 300px;
         font-size: 15px;
         margin-bottom: 70px;
+
+        @media (max-width: 1024px){
+            margin-bottom: 40px;
+        }
     }
 `;
