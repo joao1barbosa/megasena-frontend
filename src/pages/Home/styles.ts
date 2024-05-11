@@ -1,11 +1,9 @@
 import { styled } from "styled-components";
-
 export const MainScreen = styled.div`    
     height: 100vh;
     width: 100vw;
     display: flex; 
     flex-direction: row;
-
 
     @media (max-width: 1024px){
         flex-direction: column;
@@ -13,12 +11,13 @@ export const MainScreen = styled.div`
 `;
 
 export const InfoPart = styled.section`
+    /* position: absolute; */
     flex: 4;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    background-color: #6BEFA3;
+    background-color: #6BEFA3;  
     color: #ffffff;
 
     @media (max-width: 1024px){
