@@ -1,4 +1,6 @@
 import { styled } from "styled-components";
+import { Color } from "../../interfaces";
+
 export const MainScreen = styled.div`    
     height: 100vh;
     width: 100vw;
@@ -10,14 +12,14 @@ export const MainScreen = styled.div`
     }
 `;
 
-export const InfoPart = styled.section`
+export const InfoPart = styled.section<Color>`
     /* position: absolute; */
     flex: 4;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    background-color: #6BEFA3;  
+    background-color: ${({ bgColor }) => `${bgColor}`};  
     color: #ffffff;
 
     @media (max-width: 1024px){
@@ -77,6 +79,8 @@ export const Infos = styled.div`
     justify-content: flex-end;
     align-items: center;
     margin-bottom: 70px;
+    font-size: 16px;
+    font-weight: bold;
 
     margin-left: -180px;
 

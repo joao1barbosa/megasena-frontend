@@ -9,8 +9,13 @@ export interface NumberProps{
 }
 
 export interface ContestInfo{
-    name: string;
-    numbers: number[];
-    contest: number;
-    date: string;
+    name: string,
+    numbers: number[],
+    contest: number,
+    date: string,
+    color: string,
+}
+
+export interface Color{
+    bgColor: string | undefined
 }

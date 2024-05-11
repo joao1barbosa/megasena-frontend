@@ -4,6 +4,7 @@ import { Number } from "../../components/Number";
 import { Choices } from "../../components/Choices";
 import { api } from "../../services/api";
 import { ContestInfo } from "../../interfaces";
+import { setColor } from "../../utils";
 import logo from "../../assets/Logo.svg";
 
 export function Home() {
@@ -22,6 +23,7 @@ export function Home() {
                 numbers: data.listaDezenas,
                 contest: data.numero,
                 date: data.dataApuracao,
+                color: setColor(chooseName),
             })
         }).catch((err) => {
             console.log(err);
@@ -30,7 +32,7 @@ export function Home() {
 
     return (
       <MainScreen>
-        <InfoPart>
+        <InfoPart bgColor={chooseLoterry?.color}>
           <Select onChange={(e) => handleSelect(e.target.value)}>
             <Choices/>
           </Select>
