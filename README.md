@@ -1,30 +1,34 @@
-# React + TypeScript + Vite
+# Lorterias Front-end
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This was a simple challenge for frontend when I a have to build a user interface from an API.<br>
+<a hef = 'https://github.com/brainnco-exs/readme-frontend?tab=readme-ov-file'><b>➤ The origal repository</b></a>
 
-Currently, two official plugins are available:
+## 📋 Process
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+First, I decided to use Vite to start the project, using React and Typescript.
 
-## Expanding the ESLint configuration
+The next step was to visualize the problem and try to figure out how to solve it.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+The way I chose was to build the interface and put all the pieces together before filling it in, and that was when my problems started.
 
-- Configure the top-level `parserOptions` property like this:
+In the <a hef = 'https://www.figma.com/design/H2qrYBCFMf4didYmxRwTxP/Brainn-Frontend-Challenge?node-id=1-2&t=ytWXpCHH0ynZNf7f-0'>Figma</a> tamplate, you can see that the page has a sidebar with a kind of half-moon effect, and this turned out to be a bit more difficult than I'd imagined. 
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+My first attempt was to download the image and use it as the background for the sidebar. But another step I would have to take is that the background should change its color depending on the selected contest. I solved this by creating a component whit the image in svg format build whitin it, this way I can pass the color as a prop.
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+It works, but the image behaves in a way that I cannot understand: The other components do not fit on it. Jumping out of its parent component, etc.
+After hours of trying to get it to work, I guess I just gave up. There were so many other parts to do and it took more time than it was worth. So a friend who wants to see what I was doing says that it will be much easier if I build the whole page, make the API requests and all the rest before I make the style of the page and put it all in the right place (Thanks <a hef = 'https://github.com/PauloHFS'>Paulo</a>).
+
+Starting from this way of building the application, I made a selection case to choose the right contest and make the API request as saving only the information that I needed (there are a lot of things there). Then it was just a question of filling the page with the information and creating as bubbles that was needed for which contest.
+
+Finally, I just had to style the page and make it responsive in mobile.
+
+## 📱 Tech
+
+- Typescript
+- React
+- Styled-Compents
+
+## 🥳 Thanks
+
+I know that the challenge is not perfect, the final result is not exactly like the example. But I think that the main part of it was done and I like the result.
+And of course, if you know a way to make the sidebar just like the template, I will be happy to learn it.
