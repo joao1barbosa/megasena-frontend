@@ -41,10 +41,11 @@ export function Home() {
               {chooseLoterry?.name}
           </ContestName>
           <Infos>
-            <div>
-              <h3>CONCURSO</h3>
-              {chooseLoterry?.contest} - {chooseLoterry?.date}
-            </div>
+            <h3>CONCURSO&nbsp;</h3>
+              <div>
+                {chooseLoterry?.contest}
+                <p>&nbsp;-&nbsp;{chooseLoterry?.date}</p>
+              </div>
           </Infos>
         </InfoPart>
         <NumberPart>

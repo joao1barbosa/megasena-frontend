@@ -13,17 +13,18 @@ export const MainScreen = styled.div`
 `;
 
 export const InfoPart = styled.section<Color>`
-    /* position: absolute; */
     flex: 4;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    background-color: ${({ bgColor }) => `${bgColor}`};  
+    background-color: ${({ bgColor }) => `${bgColor}`};
+    transition: background-color 0.5s;
     color: #ffffff;
 
     @media (max-width: 1024px){
-        max-height: 30%;
+        min-height: 30%;
+        max-height: 35%;
     }
 `;
 
@@ -77,44 +78,75 @@ export const Infos = styled.div`
     width: 100%;
     height: 100%;
     justify-content: flex-end;
-    align-items: center;
+    align-items: flex-start;
     margin-bottom: 70px;
     font-size: 16px;
     font-weight: bold;
 
-    margin-left: -180px;
+    margin-left: 240px;
+
+    @media (max-width: 1024px){
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0px;
+        margin-bottom: 0px;
+        font-size: 16px;
+    }
+
+    div{
+        display: flex;
+        flex-direction: row;
+
+        p{
+            @media (max-width: 1024px){
+                display: none;
+            }
+        }
+    }
 
     h3{
         font-size: 13px;
         margin-bottom: 10px;
+
+        @media (max-width: 1024px){
+            margin-bottom: 0px;
+        }
     }
 `;
 
 export const NumberPart = styled.section`
     flex: 6;
-    display: flex;
+    display: grid;
     flex-direction: column;
+    grid-template-rows: 9fr 1fr;
     color: #000000;
 
     justify-content: center;
     align-items: center;
 
+    @media (max-width: 1024px){
+        grid-template-rows: 5fr 1fr;
+        }
+
     ol{
         display: flex;
         flex-wrap: wrap;
-        width: 80%;
+        width: 100%;
         
+        /* align-self: center; */
         justify-content: center;
+        align-items: center;
         gap: 20px;
-        margin: auto 0;
+        margin: 20px 0;
     }
 
     footer {
         text-align: center;
-        font-weight: 300px;
         font-size: 15px;
         margin-bottom: 70px;
 
+        align-self: flex-end;
         @media (max-width: 1024px){
             margin-bottom: 40px;
         }
