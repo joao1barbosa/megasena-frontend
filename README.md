@@ -22,6 +22,12 @@ Starting from this way of building the application, I made a selection case to c
 
 Finally, I just had to style the page and make it responsive in mobile.
 
+## 💬 Comments
+
+The API that the challenge indicated was no longer working, so I looked for one on my own and it presents a problem that blocks many requests in a short time through the CORS policy.
+
+The application works, but only some of the requests made. To make it work perfectly, I had to use a [Google Chrome extension](https://chromewebstore.google.com/detail/allow-cors-access-control/lhobafahddgcelffkeicbaginigeejlf?hl=pt-BR) that can work around the problem.
+
 ## 📱 Tech
 
 - Typescript
