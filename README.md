@@ -6,7 +6,9 @@ This is my implementation for a frontend challenge where the goal was to build a
 
 ### Desktop
 
-![Desktop](./docs/desktop.gif)
+<p align="center">
+<img src="./docs/desktop.gif">
+</p>
 
 ### Mobile
 
@@ -17,7 +19,9 @@ This is my implementation for a frontend challenge where the goal was to build a
 ## Links
 
 [➤ Challenge](https://github.com/brainnco-exs/readme-frontend?tab=readme-ov-file)
+
 [➤ Figma Template](https://www.figma.com/design/H2qrYBCFMf4didYmxRwTxP/Brainn-Frontend-Challenge?node-id=1-2&t=ytWXpCHH0ynZNf7f-0)
+
 [➤ Deployment](https://megasena-frontend.vercel.app/)
 
 ## Tech Stack
